@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport Final - Test d'Intrusion bWAPP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rapport Final - Test d'Intrusion bWAPP</h1>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>Cet apport final présente les résultats des tests d'intrusion effectués sur la plateforme bWAPP (http://10.161.11.142/bWAPP/portal.php). Ce document inclut une analyse des vulnérabilités découvertes, les méthodes d'exploitation, et des graphiques représentant les données recueillies.</p>
+    </div>
+
+    <div class="section">
+        <h2>Résumé des Vulnérabilités</h2>
+        <p>Voici un résumé des principales vulnérabilités détectées durant les tests :</p>
+        <ul>
+            <li>Local File Inclusion (LFI)</li>
+            <li>Cross-Site Scripting (XSS)</li>
+            <li>SQL Injection (SQLi)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Visualisation des Données</h2>
+        <p>Le graphique ci-dessous montre la répartition des vulnérabilités détectées durant les tests :</p>
+        <img src="{{ graph_vulnerabilities }}" alt="Répartition des vulnérabilités">
+    </div>
+
+    <div class="section">
+        <h2>Analyse des Requêtes HTTP</h2>
+        <p>Voici quelques exemples de requêtes et de réponses HTTP observées lors des tests :</p>
+        <pre>{{ http_requests }}</pre>
+    </div>
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <p>Les tests d'intrusion ont permis de découvrir des vulnérabilités critiques sur le portail bWAPP. Des recommandations pour les corrections sont présentées dans ce document afin de renforcer la sécurité de la plateforme.</p>
+    </div>
+
+</body>
+</html>
